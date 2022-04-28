@@ -1,6 +1,6 @@
 package es.mde.comando;
 
-public class MaletaCabina extends Maleta {
+public class MaletaCabinaImpl extends MaletaImpl implements MCabina {
 
 	private int altura;
 	private int anchura;
@@ -27,13 +27,6 @@ public class MaletaCabina extends Maleta {
 	}
 
 	public void setProfundidad(int profundidad) {
-		this.profundidad = profundidad;
-	}
-
-	public MaletaCabina(Double pesoEnVacio, int altura, int anchura, int profundidad) {
-		super(pesoEnVacio);
-		this.altura = altura;
-		this.anchura = anchura;
 		this.profundidad = profundidad;
 	}
 
