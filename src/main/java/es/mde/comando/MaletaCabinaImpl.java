@@ -1,6 +1,6 @@
 package es.mde.comando;
 
-public class MaletaCabinaImpl extends MaletaImpl implements MCabina {
+public class MaletaCabinaImpl extends Maleta implements MCabina {
 
 	private int altura;
 	private int anchura;

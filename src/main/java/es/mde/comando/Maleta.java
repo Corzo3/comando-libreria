@@ -3,7 +3,8 @@ package es.mde.comando;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public abstract class MaletaImpl implements Malet {
+public abstract class Maleta  {
+
 	private Collection<ElementoEquipo> elementos = new ArrayList<ElementoEquipo>();
 	private Double pesoEnVacio;
 
