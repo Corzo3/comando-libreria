@@ -5,8 +5,13 @@ import java.util.Collection;
 
 public abstract class MaletaImpl implements Maleta {
 
+	private Long id;
 	private Collection<ElementoEquipo> elementos;
 	private Double pesoEnVacio;
+
+	public Long getId() {
+		return id;
+	}
 
 	public Collection<ElementoEquipo> getElementos() {
 		return elementos;
