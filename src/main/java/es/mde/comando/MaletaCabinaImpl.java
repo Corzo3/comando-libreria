@@ -1,6 +1,6 @@
 package es.mde.comando;
 
-public class MaletaCabinaImpl extends Maleta implements MCabina {
+public class MaletaCabinaImpl extends MaletaImpl implements Maleta {
 
 	private int altura;
 	private int anchura;
@@ -28,6 +28,12 @@ public class MaletaCabinaImpl extends Maleta implements MCabina {
 
 	public void setProfundidad(int profundidad) {
 		this.profundidad = profundidad;
+	}
+
+	@Override
+	public void addElemento(ElementoEquipo elemento) {
+		getElementos().add(elemento);
+
 	}
 
 }

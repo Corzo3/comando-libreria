@@ -2,7 +2,7 @@ package es.mde.comando;
 
 import java.time.LocalDate;
 
-public class MaletaBarcoImpl extends Maleta implements MBarco {
+public class MaletaBarcoImpl extends MaletaImpl implements Maleta {
 
 	private LocalDate fechaRecogida;
 
@@ -12,5 +12,11 @@ public class MaletaBarcoImpl extends Maleta implements MBarco {
 
 	public void setFechaRecogida(LocalDate fechaRecogida) {
 		this.fechaRecogida = fechaRecogida;
+	}
+
+	@Override
+	public void addElemento(ElementoEquipo elemento) {
+		getElementos().add(elemento);
+
 	}
 }
