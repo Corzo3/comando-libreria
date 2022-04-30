@@ -2,7 +2,7 @@ package es.mde.comando;
 
 public class ElementoEquipo {
 
-	Long id;
+
 	private String nombre;
 	private Double peso;
 
