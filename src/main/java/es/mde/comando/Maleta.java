@@ -1,6 +1,14 @@
 package es.mde.comando;
 
-public interface Maleta {
-	public void addElemento(ElementoEquipo elemento);
+import java.util.Collection;
 
+public interface Maleta {
+
+	Collection<ElementoEquipo> getElementos();
+
+	Double getPesoEnVacio();
+
+	void setElementos(Collection<ElementoEquipo> elementos);
+
+	void setPesoEnVacio(Double pesoEnVacio);
 }
