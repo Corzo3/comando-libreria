@@ -11,4 +11,6 @@ public interface Maleta {
 	void setElementos(Collection<ElementoEquipo> elementos);
 
 	void setPesoEnVacio(Double pesoEnVacio);
+	
+	Double addPeso(ElementoEquipo elemento);
 }

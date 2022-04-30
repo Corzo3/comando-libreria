@@ -6,7 +6,6 @@ public class MaletaCabinaImpl extends MaletaImpl implements MaletaCabina {
 	private Integer anchura;
 	private Integer profundidad;
 
-	
 	@Override
 	public Integer getAltura() {
 		return altura;
@@ -22,7 +21,6 @@ public class MaletaCabinaImpl extends MaletaImpl implements MaletaCabina {
 		return profundidad;
 	}
 
-	
 	public void setAltura(int altura) {
 		this.altura = altura;
 	}
@@ -41,5 +39,14 @@ public class MaletaCabinaImpl extends MaletaImpl implements MaletaCabina {
 
 	}
 
-	
+	@Override
+	public Double addPeso(ElementoEquipo elemento) { //este método no está revisado
+		addElemento(elemento);
+		Double pesoTotal = .0;
+		for (ElementoEquipo element : getElementos()) {
+			pesoTotal += element.getPeso();
+
+		}
+		return pesoTotal;
+	}
 }
