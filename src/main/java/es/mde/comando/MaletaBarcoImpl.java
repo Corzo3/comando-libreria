@@ -1,6 +1,7 @@
 package es.mde.comando;
 
 import java.time.LocalDate;
+import java.util.Collection;
 import java.util.Iterator;
 
 public class MaletaBarcoImpl extends MaletaImpl implements MaletaBarco {
@@ -12,6 +13,18 @@ public class MaletaBarcoImpl extends MaletaImpl implements MaletaBarco {
 	}
 
 	public void setFechaRecogida(LocalDate fechaRecogida) {
+		this.fechaRecogida = fechaRecogida;
+	}
+	
+	
+
+	public MaletaBarcoImpl(Collection<ElementoEquipo> elementos, Double pesoEnVacio, LocalDate fechaRecogida) {
+		super(elementos, pesoEnVacio);
+		this.fechaRecogida = fechaRecogida;
+	}
+
+	public MaletaBarcoImpl(Double pesoEnVacio, LocalDate fechaRecogida) {
+		super(pesoEnVacio);
 		this.fechaRecogida = fechaRecogida;
 	}
 

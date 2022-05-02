@@ -24,6 +24,18 @@ public abstract class MaletaImpl implements Maleta {
 	public void setPesoEnVacio(Double pesoEnVacio) {
 		this.pesoEnVacio = pesoEnVacio;
 	}
+	
+
+	public MaletaImpl(Double pesoEnVacio) {
+		super();
+		this.pesoEnVacio = pesoEnVacio;
+	}
+
+	public MaletaImpl(Collection<ElementoEquipo> elementos, Double pesoEnVacio) {
+		super();
+		this.elementos = elementos;
+		this.pesoEnVacio = pesoEnVacio;
+	}
 
 	public MaletaImpl() {
 		this.elementos = new ArrayList<ElementoEquipo>();
