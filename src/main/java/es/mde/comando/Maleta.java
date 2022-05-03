@@ -37,4 +37,8 @@ public abstract class Maleta {
 	public Maleta() {
 		
 	}
+	
+	public void addElemento(ElementoEquipo elemento) {
+		getElementos().add(elemento);
+	}
 }
