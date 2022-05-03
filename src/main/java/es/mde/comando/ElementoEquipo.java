@@ -26,5 +26,8 @@ public class ElementoEquipo {
 		this.nombre = nombre;
 		this.peso = peso;
 	}
+	
+	public ElementoEquipo() {
+	}
 
 }

@@ -40,9 +40,4 @@ public abstract class MaletaImpl implements Maleta {
 	public MaletaImpl() {
 		this.elementos = new ArrayList<ElementoEquipo>();
 	}
-
-	public void addElemento(ElementoEquipo elemento) {
-		getElementos().add(elemento);
-	}
-
 }

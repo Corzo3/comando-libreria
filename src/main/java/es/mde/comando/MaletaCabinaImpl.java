@@ -34,19 +34,8 @@ public class MaletaCabinaImpl extends MaletaImpl implements MaletaCabina {
 	}
 
 	@Override
-	public void addElemento(ElementoEquipo elemento) {
-		getElementos().add(elemento);
-
-	}
-
-	@Override
-	public Double addPeso(ElementoEquipo elemento) { //este método no está revisado
-		addElemento(elemento);
-		Double pesoTotal = .0;
-		for (ElementoEquipo element : getElementos()) {
-			pesoTotal += element.getPeso();
-
-		}
-		return pesoTotal;
+	public Double addPeso(ElementoEquipo elemento) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
