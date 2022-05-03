@@ -2,7 +2,6 @@ package es.mde.comando;
 
 public class ElementoEquipo {
 
-
 	private String nombre;
 	private Double peso;
 
@@ -22,12 +21,12 @@ public class ElementoEquipo {
 		this.peso = peso;
 	}
 
+	public ElementoEquipo() {
+	}
+
 	public ElementoEquipo(String nombre, Double peso) {
 		this.nombre = nombre;
 		this.peso = peso;
-	}
-	
-	public ElementoEquipo() {
 	}
 
 }

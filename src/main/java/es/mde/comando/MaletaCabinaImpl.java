@@ -1,6 +1,6 @@
 package es.mde.comando;
 
-public class MaletaCabinaImpl extends MaletaImpl implements MaletaCabina {
+public class MaletaCabinaImpl extends Maleta implements MaletaCabina {
 
 	private Integer altura;
 	private Integer anchura;
@@ -33,9 +33,4 @@ public class MaletaCabinaImpl extends MaletaImpl implements MaletaCabina {
 		this.profundidad = profundidad;
 	}
 
-	@Override
-	public Double addPeso(ElementoEquipo elemento) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }

@@ -2,15 +2,39 @@ package es.mde.comando;
 
 import java.util.Collection;
 
-public interface Maleta {
+public abstract class Maleta {
 
-	Collection<ElementoEquipo> getElementos();
+	private Collection<ElementoEquipo> elementos;
+	private Double pesoEnVacio;
 
-	Double getPesoEnVacio();
+	public Collection<ElementoEquipo> getElementos() {
+		return elementos;
+	}
 
-	void setElementos(Collection<ElementoEquipo> elementos);
+	public Double getPesoEnVacio() {
+		return pesoEnVacio;
+	}
 
-	void setPesoEnVacio(Double pesoEnVacio);
+	public void setElementos(Collection<ElementoEquipo> elementos) {
+		this.elementos = elementos;
+	}
+
+	public void setPesoEnVacio(Double pesoEnVacio) {
+		this.pesoEnVacio = pesoEnVacio;
+	}
+
+	public Maleta(Double pesoEnVacio) {
+		super();
+		this.pesoEnVacio = pesoEnVacio;
+	}
+
+	public Maleta(Collection<ElementoEquipo> elementos, Double pesoEnVacio) {
+		super();
+		this.elementos = elementos;
+		this.pesoEnVacio = pesoEnVacio;
+	}
 	
-	Double addPeso(ElementoEquipo elemento);
+	public Maleta() {
+		
+	}
 }

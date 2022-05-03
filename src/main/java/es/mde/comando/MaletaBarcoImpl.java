@@ -3,7 +3,7 @@ package es.mde.comando;
 import java.time.LocalDate;
 import java.util.Collection;
 
-public class MaletaBarcoImpl extends MaletaImpl implements MaletaBarco {
+public class MaletaBarcoImpl extends Maleta implements MaletaBarco {
 
 	private LocalDate fechaRecogida;
 
@@ -27,10 +27,5 @@ public class MaletaBarcoImpl extends MaletaImpl implements MaletaBarco {
 		this.fechaRecogida = fechaRecogida;
 	}
 
-	@Override
-	public Double addPeso(ElementoEquipo elemento) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }
 
