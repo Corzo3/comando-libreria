@@ -1,10 +1,11 @@
 package es.mde.comando;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 public abstract class Maleta {
 
-	private Collection<ElementoEquipo> elementos;
+	private Collection<ElementoEquipo> elementos = new ArrayList<>();
 	private Double pesoEnVacio;
 
 	public Collection<ElementoEquipo> getElementos() {
