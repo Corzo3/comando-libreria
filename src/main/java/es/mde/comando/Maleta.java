@@ -6,13 +6,13 @@ import java.util.Collection;
 public abstract class Maleta {
 
 	private Collection<ElementoEquipo> elementos = new ArrayList<>();
-	private Double pesoEnVacio;
+	private Float pesoEnVacio;
 
 	public Collection<ElementoEquipo> getElementos() {
 		return elementos;
 	}
 
-	public Double getPesoEnVacio() {
+	public Float getPesoEnVacio() {
 		return pesoEnVacio;
 	}
 
@@ -20,16 +20,16 @@ public abstract class Maleta {
 		this.elementos = elementos;
 	}
 
-	public void setPesoEnVacio(Double pesoEnVacio) {
+	public void setPesoEnVacio(Float pesoEnVacio) {
 		this.pesoEnVacio = pesoEnVacio;
 	}
 
-	public Maleta(Double pesoEnVacio) {
+	public Maleta(Float pesoEnVacio) {
 		super();
 		this.pesoEnVacio = pesoEnVacio;
 	}
 
-	public Maleta(Collection<ElementoEquipo> elementos, Double pesoEnVacio) {
+	public Maleta(Collection<ElementoEquipo> elementos, Float pesoEnVacio) {
 		super();
 		this.elementos = elementos;
 		this.pesoEnVacio = pesoEnVacio;
@@ -42,4 +42,6 @@ public abstract class Maleta {
 	public void addElemento(ElementoEquipo elemento) {
 		getElementos().add(elemento);
 	}
+	
+	
 }

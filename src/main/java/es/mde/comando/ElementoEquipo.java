@@ -3,7 +3,7 @@ package es.mde.comando;
 public class ElementoEquipo {
 
 	private String nombre;
-	private Double peso;
+	private Float peso;
 
 	public String getNombre() {
 		return nombre;
@@ -17,14 +17,14 @@ public class ElementoEquipo {
 		return peso;
 	}
 
-	public void setPeso(double peso) {
+	public void setPeso(Float peso) {
 		this.peso = peso;
 	}
 
 	public ElementoEquipo() {
 	}
 
-	public ElementoEquipo(String nombre, Double peso) {
+	public ElementoEquipo(String nombre, Float peso) {
 		super();
 		this.nombre = nombre;
 		this.peso = peso;
