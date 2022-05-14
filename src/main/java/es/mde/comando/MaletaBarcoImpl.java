@@ -17,12 +17,12 @@ public class MaletaBarcoImpl extends Maleta implements MaletaBarco {
 	
 	
 
-	public MaletaBarcoImpl(Collection<ElementoEquipo> elementos, Double pesoEnVacio, LocalDate fechaRecogida) {
+	public MaletaBarcoImpl(Collection<ElementoEquipo> elementos, Float pesoEnVacio, LocalDate fechaRecogida) {
 		super(elementos, pesoEnVacio);
 		this.fechaRecogida = fechaRecogida;
 	}
 
-	public MaletaBarcoImpl(Double pesoEnVacio, LocalDate fechaRecogida) {
+	public MaletaBarcoImpl(Float pesoEnVacio, LocalDate fechaRecogida) {
 		super(pesoEnVacio);
 		this.fechaRecogida = fechaRecogida;
 	}
